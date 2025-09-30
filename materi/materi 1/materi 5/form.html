@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 5 FORM</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+  </head>
+  <body>
+    <!-- tag main = div tapi lebih utama -->
+    <main class="container">
+      <h1>HTTML 5 FORM Tutorial</h1>
+      <hr />
+      <form>
+        <!-- tiips shortcut: input:[type-nya] -->
+        <!-- jika tdk memakai div: maka hasil akan memanjang[jelek] -->
+        <div>
+          <label for="inputNAme">Nama Lengkap</label>
+          <input type="text" name="nama lengkap" id="inputNAme" />
+        </div>
+        <br />
+        <!-- jika nama for dan id tdk sesuai maka akan tdk bisa otomatis pencet label[lansung bisa ketik] -->
+        <div>
+          <label for="inputAge">umur</label>
+          <input type="number" name="umur" id="inputAge" />
+        </div>
+        <div>
+          <label for="inputBio">biografi</label>
+          <textarea name="biografi" id="inputBio"></textarea>
+        </div>
+        <div>
+          <p>Jenis Kelamin</p>
+          <input type="radio" name="jenis_kelamin" id="inputLanang" />
+          <label for="inputLanang">LAKI-LAKI</label>
+          <input type="radio" name="jenis_kelamin" id="inputCewe" />
+          <label for="inputCewe">PEREMPUAN</label>
+          <input type="radio" name="jenis_kelamin" id="inputRahasia" />
+          <label for="inputRahasia">RAHASIA</label>
+          <br /><br />
+
+          <div>
+            <p>HOBI</p>
+            <input type="checkbox" name="hobi" id="inputMancing" />
+            <label for="inputMancing">Mancing</label>
+            <input type="checkbox" name="hobi" id="inputBaca" />
+            <label for="inputBaca">Baca</label>
+            <input type="checkbox" name="hobi" id="inputMakan" />
+            <label for="inputMakan">Makan</label>
+            <input type="checkbox" name="hobi" id="inputNgelem" />
+            <label for="inputNgelem">Ngelem</label>
+          </div>
+          <br /><br />
+        </div>
+        <div>
+          <label for="inputkota">nama kota</label>
+          <select name="asal_kota" id="inputkota">
+            <option value="JKT">JAKARTA</option>
+            <option value="YOG">YOGYAKARTA</option>
+            <option value="PRJ">PEROWEREJO</option>
+            <option value="DPK">DEPOK</option>
+          </select>
+        </div>
+        <div>
+          <label for="inputDate">Tanggal Lahir</label>
+          <input type="date" name="tag_lahir" id="inputDate" />
+        </div>
+        <div>
+          <label for="inputEmail">Email</label>
+          <input type="email" name="Email" id="inputEmail" />
+        </div>
+        <div>
+          <label for="inputPass">PASSWORD</label>
+          <input type="password" name="PASSWORD" id="inputPass" />
+        </div>
+        <div>
+          <label for="inputFile">Kirim Foto</label>
+          <input type="file" name="foto" id="inputFile" />
+        </div>
+        <div class="grid">
+          <!-- action button -->
+          <!-- class: grid : untuk membuat -->
+          <!-- tiips shrtcut: button:[type ny] -->
+          <button type="reset">Batal</button>
+          <button type="submit">Simpan</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
