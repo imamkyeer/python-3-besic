@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3: Box Model & Position</title>
+    <!-- add pico css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <!-- add style.css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- bungkus dengan class container agar ada space di kiri-kanan -->
+    <div class="container">
+      <h1>CSS3: Box Model & Position</h1>
+      <hr />
+      <!-- buat kolom otomatis dengan class grid -->
+      <h2>Bagian 1: Box Model</h2>
+      <div class="grid">
+        <div class="card">
+          <div id="box-a">
+            <p>Box A</p>
+            <p>(Konten Polos)</p>
+          </div>
+        </div>
+        <div class="card">
+          <div id="box-b">
+            <p>Box B</p>
+            <p>(Konten + Padding)</p>
+          </div>
+        </div>
+        <div class="card">
+          <div id="box-c">
+            <p>Box C</p>
+            <p>(Konten + Padding + Border)</p>
+          </div>
+        </div>
+        <div class="card">
+          <div id="box-d">
+            <p>Box D</p>
+            <p>(Konten + Padding + Border + Margin)</p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <hr />
+      <br />
+      <h2>Bagian 2: Position</h2>
+      <div class="grid">
+        <div class="card">
+          <div id="box-e">
+            <p>Box E</p>
+            <p>(Static)</p>
+          </div>
+        </div>
+        <div class="card">
+          <div id="box-f">
+            <p>Box F</p>
+            <p>(Relative)</p>
+          </div>
+        </div>
+        <!-- absolute diatasnya harus ada relative position -->
+        <div class="card" style="position: relative;">
+          <div id="box-g">
+            <p>Box G</p>
+            <p>(Absolute)</p>
+          </div>
+        </div>
+        <div class="card">
+          <div id="box-h">
+            <p>Box H</p>
+            <p>(Fixed)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+    <br><br><br><br>
+  </body>
+</html>

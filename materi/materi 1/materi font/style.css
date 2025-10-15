@@ -1,0 +1,35 @@
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+h1 { 
+    color: rgb(86, 57, 250);
+    font-size: 40px;
+    font-family: "fontsaya";
+}
+h2 {
+    font-weight: lighter;
+      font-family: "Noto Sans KR", sans-serif;
+
+}
+.paragraph {
+    width: 40%;
+    background-color: aqua; 
+    padding: auto;
+}
+@font-face {
+    font-family: "fontsaya";
+    src: url(fontsaya.otf) format(truetype);
+}
+.paragraph p {
+    text-align: center;
+    text-transform: lowercase;
+    line-height: 1.5;
+    letter-spacing: 4px;
+}
