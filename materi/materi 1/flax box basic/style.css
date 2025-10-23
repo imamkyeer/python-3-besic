@@ -1,0 +1,46 @@
+.card {
+  background: #f9f9f9;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  height: 250px;
+  width: 200px;
+  border: 2px dashed #eee;
+  border-radius: 6px;
+}
+/* wadah flaxbox wajib dislay nya flex */
+.pricing-area{
+  display: flex;
+  /* atur arah items apakah 
+  horizontal/vertikal */
+  /* flex-direction: row; (row-reverse, columen)*/
+  flex-direction: row;
+  /* atur jarak antar items */
+  gap: 10px;
+  /* atur arah posisi horizontal */
+  /* default flex-start(center, flex-end,
+  space-between) */
+  justify-content: center;
+  /* posisi vertikal nya */
+  /* default :flex-start */
+  
+}
+.pro-blu{
+  border: 2px solid blue;
+  width: 250px;
+  height: 250px;
+}
+.alert{
+  display: flex;
+  background-color: cornflowerblue;
+  border: 2px solid blue;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.alert button{
+  font-size: 10px;
+  background: indigo;
+  padding: 8px;
+
+}

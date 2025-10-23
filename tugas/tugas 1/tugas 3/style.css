@@ -1,394 +1,46 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-/* .judul {
-  width: 75%;
-  text-align: center;
-  /* border-bottom: 4px solid rgb(222, 215, 215); */
-  /* margin: auto;
-} */ 
-.title {
-  color: blue;
-}
-.pengantar {
-  width: 75%;
-  margin: auto;
-  margin-top: 58px;
-  padding: 12px;
-  border-radius: 12px;
-  background-color: rgb(227, 217, 217);
-}
-.title-pengantar {
-  width: 75%;
-  margin: auto;
-  margin-left: 24px;
-  font-size: 25px;
-  border-left: 6px solid gold;
-  padding-left: 14px;
-}
-.paragraph-pengantar {
-  margin-left: 35px;
-  margin-right: 35px;
-}
-.avatar {
-  width: 75%;
-  margin: auto;
-  margin-top: 58px;
-  padding: 12px;
-  border-radius: 12px;
-  background-color: rgb(227, 217, 217);
-}
-.title-avatar {
-  margin-left: 24px;
-  font-size: 24px;
-  border-left: 6px solid gold;
-  padding-left: 14px;
-}
-.paragraph-penjelas {
-  margin-left: 35px;
-  margin-top: 35px;
-}
-.paragraph-avatar {
-  margin-left: 24px;
-  margin-right: 24px;
-}
-/* BIODATA */
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-header,
-.header {
-  background: #4caf50;
-  color: white;
-  padding: 15px;
-  text-align: center;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  background-color: white;
-  align-items: center;
-  border-radius: 12px;
-  padding: 20px;
-  width: 60%;
-    margin: auto;
-    /* margin-right: 98PX; */
-    padding-top: 12PX;
-    display: flex;
-}
-
-nav a {
-  color: white;
-  text-decoration: none; /* hapus garis bawah */
-  border-radius: 22px; /* ubah sudut jadi bulat */
-  background:blue;
-  padding: 6px 14px;
-  /* padding-top: 6px; */
-  /* padding-bottom: 6px; */
-  /* padding-left: 14px; */
-  /* padding-right: 14px; */
-  margin-right: 22px; /* jarak luar antar link */
-}
-
-/* set button active*/
-nav a.active,
-nav a.active {
-    background: blue;
-    color: #fff;
- }
-
-main
-.main {
-  
-} 
-
-/* Section / Artikel utama */
-section,
-.section {
-  flex: 2;
-  background: #e3f2fd;
-  padding: 15px;
-  border-radius: 6px;
-}
-
-/* Article khusus */
-article,
-.article {
-  background: #bbdefb;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 4px;
-}
-
-/* Sidebar / aside */
-aside,
-.aside {
-  flex: 1;
-  background: #ffe082;
-  padding: 15px;
-  border-radius: 6px;
-}
-
-/* Footer */
-footer,
-.footer {
-  background: #333;
-  color: #fff;
-  padding: 15px;
-  text-align: center;
-}
-
-.judul {
-  width: 95%;
-  display: block;
-  text-align: center;
-  /* border-bottom: 4px solid rgb(235, 250, 250); */
-  margin: auto;
+@font-face {
+  font-family: "Bismillah";
+  src: url(Bismillah\ Script.ttf);
   
 }
 
-.singkat {
-  width: 75%;
-  /* background-color: rgb(235, 225, 225); */
-  text-align: center;
-  border-bottom: 4px solid rgb(235, 250, 250);
+.signature {
+  font-family: "Bismillah", cursive;
+  font-size: 22px;
+  color: #b91c1c;
+  text-align: right;
 }
 
-/* .title {
-  color: blue;
-} */
-.Biodata {
-  width: 75%;
-  margin: auto;
-  margin-top: 50px;
-  padding: 12px;
-  border-radius: 50px;
-  background-color: rgb(235, 225, 225);
-  border-bottom: 4px;
-}
-.FOTO {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #e5e7eb;
-  display: block;
-  margin: 10px auto;
-}
-.title-biodata {
-  width: 75%;
-  /* margin: auto; */
-  margin-left: 24px;
-  font-size: 25px;
-  border-left: 6px solid gold;
-  padding-left: 14px;
-}
-.paragraph-data {
-  margin-left: 45px;
-  margin-right: 20px;
-  /* border: 2px solid red; */
+
+.title{
+    background-color: rgb(182, 175, 166);
+    padding: 16px;
+    /* margin-left: 12px; */
+     text-align: center;
 }
 
-.hobi {
-  width: 75%;
-  margin: auto;
-  margin-top: 58px;
-  padding: 24px;
-  border-radius: 12px;
-  background-color: rgb(238, 231, 231);
-}
 
-.title-hobi {
-  font-size: 24px;
-  border-left: 6px solid gold;
-  padding-left: 14px;
-}
-
-.cita-cita {
-  width: 75%;
-  margin: auto;
-  margin-top: 58px;
-  padding: 12px;
-  border-radius: 12px;
-  background-color: rgb(242, 234, 234);
-}
-
-.title-Cita-Cita {
-  width: 75%;
-  /* margin-left: 24px; */
-  font-size: 24px;
-  border-left: 6px solid gold;
-  padding-left: 14px;
-}
-.alamat-kontak {
-  /* width: 75%; */
-  margin: auto;
-  margin-top: 58px;
-  padding: 12px;
-  border-radius: 12px;
-  background-color: rgb(242, 234, 234);
-}
-.title-alamat {
-  font-size: 24px;
-  border-left: 6px solid gold;
-  padding-left: 14px;
-}
-/* Reset sederhana */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
-
-/* Warna latar untuk memvisualisasikan blok */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-/* .judul { */
-  /* width: 75%;
-  text-align: center;
-  /* border-bottom: 4px solid rgb(222, 215, 215); */
-  /* margin: auto; */ */
-/* } */
-.title {
-  color: blue;
-}
-/* .pengantar {
-  width: 75%;
-  margin: auto;
-  margin-top: 58px;
-  padding: 12px;
-  border-radius: 12px;
-  background-color: rgb(227, 217, 217);
-}.*/
-.galeri{ 
-
-/* width: 75%; */
-  /* margin: auto; */
-  /* margin-top: 58px; */
-  padding: 24px;
-  border-radius: 12px;
-  background-color: rgb(252, 248, 248);
-text-align: center;
-
-}
-
-.Karya{ 
-  /* /* margin-left: auto; */
-  margin-right: 14px;
-  font-size: 24px;
-  padding: 24px;
-text-align: left;
-  width: 75%;
-  border-left: 6px solid gold;
-  padding-left: 14px;
-}
-.gallery{
-  text-align: center;
-
-}
-.gallery h2{
-  color: #be06f6;
-  font-size: 34px;
-}
-.gallery p{
-  color: #666;
-  font-size: 16px;
-}
-.card{
-  display: inline-block;
- width: 200;
- margin: 14px; 
- overflow: hidden;
- border: 1px solid #ddd;
-border-radius: 8px;
-}
-.gallery .card img{
-  width: 100%;
-  height: 140px;
-  object-fit: cover;
-}
-.gallery .card figcaption{
-  background-color: red;
-color: white;
-padding: 4px;
-font-size: 12px;
-margin-top: -8;
-}
-.ha{
-  font-size: 24px;
-
-}
-#table-basic {
-        /* width: 60%; */
-        border-collapse: collapse;
-      }
-      #table-basic td {
-        padding: 6px;
-        font-size: 16px; 
-      }
-      #table-basic .bg-blue {
-        background-color: blue;
-        color: aliceblue;
-        
-      }
-      
-         #table-basic {
-        width: 90%; 
-        border-collapse: collapse;
-        padding:14px;
-      margin: 12px;
-      }
-      nav {
-        display: flex;
-      }
-      
-     
-      #table-basic .bg-bawah{
-        background-color: blue;
-        color: aliceblue;
-        width: 30%;
-      }
-    .utama{
-      width: 70%;
-      margin: auto;
-      background-color: whitesmoke;
-      padding: 12px;
-    }
-    .title-fedbeck{
-    font-size: 35px;
-    border-left: 6px solid gold;
-    padding-left: 28px;
-    width: 60%;
-    margin-left: 14px;
-    text-align: left;
-
-    }
-  .title-jadwal{
-    font-size: 25px;
-    border-left: 6px solid gold;
-    padding-left: 28px;
-    width: 60%;
-    margin-left: 14px;
-    text-align: left;
-  }
-  .utama1 {
-      width: 90%;
-      margin:auto;
-      background-color: whitesmoke;
-      padding: 1px;
-      font-size: 25px;
-    margin-top: 58px;
-    padding: 12px;
-    border-radius: 14px;
-    /* margin-left: 35px; */
+.pertama {
+    background-color: aquamarine;
     
-    }
+  margin-bottom: 25px;
+}
+
+/* header, .h1{
+    background-color: burlywood;
+    margin-top: 25px;
+} */
+
+.sebelum-akhir{
+  background-color: rgb(188, 249, 249);
+  border-left: 6px solid rgb(16, 19, 211);
+  font-size: 25px;
+ 
+
+}
+.akhir{
+background-color: rgba(237, 203, 203, 0.64);
+  border-left: 6px solid rgb(243, 6, 6);
+  font-size: 20px;
+ 
+}
