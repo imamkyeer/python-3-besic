@@ -1,0 +1,108 @@
+/* ===== Layout Dasar ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, Arial, sans-serif;
+  background: #f5f7fa;
+  color: #222;
+  line-height: 1.6;
+}
+.site-header {
+  background: #e8effb;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.site-header h1 {
+  margin-bottom: 0.5rem;
+}
+.site-header p {
+  color: #000000;
+}
+
+/* Kontainer */
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.site-footer {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+.main-nav{
+  margin-top: 14px;
+}
+.main-nav ul{
+  /* reset bunderan nya */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.main-nav ul li a{
+  color: white;
+  background-color: rgb(100, 100, 255);
+  text-decoration: none;
+  /* 6px => atas bawah */
+  /* 20px => kiri kanan */
+  padding: 6px 20px;
+  border-radius: 20px;
+  display: block;
+}
+
+/* ukuran 1024px => desktop++ */
+@media screen and (min-width: 1024px) {
+  .site-header{
+    background: indigo;
+    color: white;
+  }
+  .site-header P{
+    color: white;
+  }
+  /* masukkan tag / target selector */
+}
+
+/* ukuran 768-1023px => tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .site-header{
+    background: tomato;
+    color: white;
+  }
+  .site-header P{
+    color: white;
+  }
+  .main-nav ul li {
+    flex-grow: 1; /* boleh melebar */
+    flex-shrink: 1;/* boleh menyusut */
+    flex-basis: calc(33.33% - .5rem) ;
+  }
+  /* masukkan tag / target selector */
+}
+
+/* ukuran max 767px => smartphone */
+@media screen and (max-width: 767px) {
+  .site-header h1{
+    
+    font-size: 24px;
+  }
+  .site-header P{
+    font-size: 14px;
+  }
+  .main-nav ul li {
+    flex-grow: 1; /* boleh melebar */
+    flex-shrink: 1;/* boleh menyusut */
+    flex-basis: 100%;
+    /* biar full ke bawah */
+  }
+  /* masukkan tag / target selector */
+}

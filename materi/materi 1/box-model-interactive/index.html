@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3: Box Model & Position — Interactive Lab</title>
+
+    <!-- Pico CSS for quick, clean defaults -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+
+    <!-- Custom styles for this lab -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1>CSS3: Box Model & Position <small class="muted">— Interactive Lab</small></h1>
+      <p class="muted">Explore content, padding, border, margin, and positioning (static, relative, absolute, fixed, sticky, z-index).</p>
+      <hr />
+    </header>
+
+    <!-- Toolbar (teacher & student helpers) -->
+    <section class="container toolbar">
+      <div class="grid">
+        <div>
+          <hgroup>
+            <h3>🔧 Layout Helpers</h3>
+            <p class="muted">Toggle visual debugging & background grid.</p>
+          </hgroup>
+          <button id="toggleOutline" class="contrast">🔲 Toggle Outline</button>
+          <button id="toggleBgGrid">🟩 Toggle Background Grid</button>
+        </div>
+        <div>
+          <hgroup>
+            <h3>🎛️ Live Box Controls</h3>
+            <p class="muted">Manipulate padding, margin, and border in real-time.</p>
+          </hgroup>
+
+          <div class="controls">
+            <label for="padRange">Padding (<span id="padVal">10</span>px)</label>
+            <input type="range" id="padRange" min="0" max="60" value="10" />
+
+            <label for="marginRange">Margin (<span id="marginVal">10</span>px)</label>
+            <input type="range" id="marginRange" min="0" max="60" value="10" />
+
+            <label for="borderRange">Border (<span id="borderVal">4</span>px)</label>
+            <input type="range" id="borderRange" min="0" max="20" value="4" />
+          </div>
+        </div>
+        <div>
+          <hgroup>
+            <h3>📦 Demo Box</h3>
+            <p class="muted">Observe how spacing affects the total rendered box.</p>
+          </hgroup>
+          <div id="demoBox" role="img" aria-label="Interactive demo box">
+            Demo Box
+          </div>
+          <small class="muted">Tip: Open DevTools & inspect this box while sliding the controls.</small>
+        </div>
+      </div>
+    </section>
+
+    <main class="container">
+      <!-- BOX MODEL SECTION -->
+      <section aria-labelledby="box-model-title">
+        <h2 id="box-model-title">Box Model</h2>
+        <p class="muted">From plain content to padding, border, and margin — hover to see animated changes.</p>
+        <div class="grid">
+          <article class="card">
+            <header>Box 1 — Plain Content</header>
+            <div id="box1" class="box">content</div>
+            <footer><small>Only width/height set.</small></footer>
+          </article>
+
+          <article class="card">
+            <header>Box 2 — + Padding</header>
+            <div id="box2" class="box">content + padding</div>
+            <footer><small>Hover to expand padding.</small></footer>
+          </article>
+
+          <article class="card">
+            <header>Box 3 — + Border</header>
+            <div id="box3" class="box">content + padding + border</div>
+            <footer><small>Hover to thicken border.</small></footer>
+          </article>
+
+          <article class="card">
+            <header>Box 4 — + Margin</header>
+            <div id="box4" class="box">content + padding + border + margin</div>
+            <footer><small>Hover to grow margin (outside space).</small></footer>
+          </article>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- POSITION SECTION -->
+      <section aria-labelledby="position-title">
+        <h2 id="position-title">Position</h2>
+        <p class="muted">How elements are positioned in normal flow and when taken out of it.</p>
+
+        <div class="grid">
+          <article class="card">
+            <header>Static (default)</header>
+            <div id="box5" class="box center">Static</div>
+            <footer><small>No offsets applied.</small></footer>
+          </article>
+
+          <article class="card">
+            <header>Relative</header>
+            <div id="box6" class="box center">Relative</div>
+            <footer><small>Offset relative to its normal position.</small></footer>
+          </article>
+
+          <article class="card">
+            <header>Absolute (inside a relative parent)</header>
+            <div class="relative-parent">
+              <div id="box7" class="box center">Absolute</div>
+            </div>
+            <footer><small>Removed from normal flow, positioned to the nearest positioned ancestor.</small></footer>
+          </article>
+
+          <article class="card">
+            <header>Fixed (viewport-based)</header>
+            <div id="box8" class="box center">
+              Fixed
+              <button id="dismissFixed" class="secondary small">✖</button>
+            </div>
+            <footer><small>Stays put when scrolling.</small></footer>
+          </article>
+        </div>
+
+        <div class="grid" style="margin-top: var(--space-2)">
+          <article class="card">
+            <header>Sticky</header>
+            <div id="box9" class="box center">Sticky (scroll down)</div>
+            <footer><small>Behaves like relative until it hits the top, then sticks.</small></footer>
+          </article>
+
+          <article class="card">
+            <header>Z-Index (Stacking Order)</header>
+            <div class="zstage">
+              <div id="z1" class="zbox">Z-1</div>
+              <div id="z2" class="zbox">Z-2</div>
+            </div>
+            <div class="grid" style="--grid-gap: .5rem">
+              <button id="bringZ1Front">Bring Z-1 Front</button>
+              <button id="bringZ2Front" class="secondary">Bring Z-2 Front</button>
+            </div>
+            <footer><small>Click buttons to change stacking with <code>z-index</code>.</small></footer>
+          </article>
+        </div>
+
+        <!-- Filler content to make scrolling behavior obvious -->
+        <div style="height: 40vh"></div>
+        <p class="muted" style="text-align:center">Scroll area filler to demonstrate <code>position: sticky</code> and <code>fixed</code>.</p>
+        <div style="height: 40vh"></div>
+      </section>
+    </main>
+
+    <!-- Scripts: minimal, no frameworks -->
+    <script>
+      // ====== Helper Toggles ======
+      const toggleOutline = document.getElementById('toggleOutline');
+      const toggleBgGrid = document.getElementById('toggleBgGrid');
+      toggleOutline.addEventListener('click', () => {
+        document.body.classList.toggle('debug');
+      });
+      toggleBgGrid.addEventListener('click', () => {
+        document.body.classList.toggle('bg-grid');
+      });
+
+      // ====== Live Controls for Demo Box ======
+      const padRange = document.getElementById('padRange');
+      const marginRange = document.getElementById('marginRange');
+      const borderRange = document.getElementById('borderRange');
+      const padVal = document.getElementById('padVal');
+      const marginVal = document.getElementById('marginVal');
+      const borderVal = document.getElementById('borderVal');
+      const demoBox = document.getElementById('demoBox');
+
+      function updateDemo() {
+        demoBox.style.padding = padRange.value + 'px';
+        demoBox.style.margin = marginRange.value + 'px';
+        demoBox.style.borderWidth = borderRange.value + 'px';
+        padVal.textContent = padRange.value;
+        marginVal.textContent = marginRange.value;
+        borderVal.textContent = borderRange.value;
+      }
+      padRange.addEventListener('input', updateDemo);
+      marginRange.addEventListener('input', updateDemo);
+      borderRange.addEventListener('input', updateDemo);
+      updateDemo();
+
+      // ====== Fixed demo dismiss ======
+      const dismissBtn = document.getElementById('dismissFixed');
+      const fixedBox = document.getElementById('box8');
+      dismissBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        fixedBox.classList.add('hidden');
+      });
+
+      // ====== Z-index demo ======
+      const z1 = document.getElementById('z1');
+      const z2 = document.getElementById('z2');
+      const bringZ1Front = document.getElementById('bringZ1Front');
+      const bringZ2Front = document.getElementById('bringZ2Front');
+      bringZ1Front.addEventListener('click', () => {
+        z1.style.zIndex = 2;
+        z2.style.zIndex = 1;
+      });
+      bringZ2Front.addEventListener('click', () => {
+        z1.style.zIndex = 1;
+        z2.style.zIndex = 2;
+      });
+    </script>
+  </body>
+</html>

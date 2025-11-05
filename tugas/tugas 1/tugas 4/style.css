@@ -1,0 +1,292 @@
+.alert{
+  display: flex;
+  /* background-color: rgb(195, 206, 225); */
+  border: 2px solid rgb(28, 28, 207);
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 5px; */
+  font-size: 10px
+  
+  ;
+  background-color: rgb(0, 229, 255);
+}
+.container{
+  background-color: rgb(255, 255, 255);
+ padding-bottom: 1px;
+ padding-top: 1px;
+}
+.kacau{
+  background-color: antiquewhite;
+      background-color: rgb(210, 195, 195);
+    margin: 50px 12px;
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+.dasar{
+  background-color: blue;
+}
+.anak-baru{
+  background-color: antiquewhite;
+      background-color: rgb(210, 195, 195);
+    margin: 50px 12px;
+    padding: 12px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.atas-alert{
+  
+  border-radius: 17px;
+  /* margin-bottom: ; */
+  /* padding-left: ; */
+  /* margin-left: 10px;
+  /* margin-right: 10px; */
+  
+  
+  margin: 50px 12px;
+}
+.alert h2{
+  color: rgb(0, 0, 0);
+  
+}
+.Active{
+      color: white;
+    text-decoration: none;
+    border-radius: 22px;
+    background: green;
+    padding: 6px 10px;
+    padding: 2px 6px;
+    /* margin-top: 18px; */
+    font-size: 10px;
+    position: absolute;
+    /* padding-bottom: 6px; */
+    /* padding-left: 14px; */
+    /* padding-right: 14px; */
+    /* margin-right: 22px;  */
+}
+.alert p{
+  /* padding: auto; */
+  /* background-color: rgb(168, 204, 255); */
+}
+.alert button{
+  font-size: 18px;
+  background: rgb(49, 46, 52);
+  /* padding: 0px; */
+    color: white;
+  
+ 
+
+}
+.avatar{
+  border: radius 8px; ;
+  width: 100px;
+
+  /* width: 220px; */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 80%;
+    border: 3px solid #e5e7eb;
+    display: block;
+ background-color:rgb(255, 255, 255);
+
+}
+.card{
+   background: #f9f9f9;
+    text-align: center; 
+    place-content: center;
+    place-items: center;
+    height: 250px;
+    width: 200px;
+    box-shadow: 0 6px 20px rgba(124, 58, 237, 0.15);
+    border: 2px solid #d9d9d9;
+    border-radius: 6px;
+
+}
+.profile-card{
+  /* width: 75%; */
+    background-color:rgb(210, 195, 195);
+  /* border-radius: 17px;
+  margin-bottom: 24px;
+  
+  margin-left: 10px;
+  margin-right: 10px;
+    margin-top: 50px; */
+    margin: 50px 12px;
+    padding: 12px;
+    border-radius: 20px;
+    /* background: rgb(255, 253, 253);
+    border-bottom: 4px; */
+font-size: 15px;
+
+}
+
+
+.card2 {
+      background: #f9f9f9;
+    text-align: center;
+    place-content: center;
+    place-items: center;
+    height: 250px;
+    width: 200px;
+    box-shadow: 0 6px 20px rgba(124, 58, 237, 0.15);
+    margin-left: 600px;
+    border: 2px solid #d9d9d9;
+    border-radius: 20px;
+}
+
+/* wadah flaxbox wajib dislay nya flex */
+.pricing-area{
+  display: flex;
+  /* atur arah items apakah 
+  horizontal/vertikal */
+  /* flex-direction: row; (row-reverse, columen)*/
+  flex-direction: row;
+  /* atur jarak antar items */
+  gap: 10px;
+  /* atur arah posisi horizontal */
+  /* default flex-start(center, flex-end,
+  space-between) */
+  justify-content: center;
+  margin-top: 22px;
+  /* posisi vertikal nya */
+  /* default :flex-start */
+     
+    border-radius: 17px;
+    margin-bottom: 54px;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 1.5, 2em, 120%;
+  /* height: 100px; */
+}
+.price-1{
+  color: red;
+  font-size: 30px;
+}
+.price-2{
+  color: black;
+  font-size: 30px;
+}
+
+.prc{
+        background-color: rgb(240 234 234);
+        margin: 50px 12px;
+        padding-left: 22px;
+        padding-top:1px ;
+        border-radius: 20px;
+        margin-bottom: 122px;
+}
+.pro-blue {
+    border: 2px solid blue;
+    width: 250px;
+    height: 250px;
+    
+}
+.price{
+  color: blue;
+  font-size: 30px;
+  
+}
+.ul{
+  list-style: none;
+  font-size: 18px;
+padding-right:22px;
+padding-left: 12px;
+}
+
+
+
+
+
+
+
+
+/* .flexbox-plan{
+    display: flex;
+
+    flex-direction: column;
+    /* gap jarak anatar item */
+    /* gap: 20px;
+    justify-content: space-between;
+} */
+/* .plan{
+  background: #f9f9f9;
+  text-align: center;
+  place-content: center;
+  place-items: center; */
+  /* height: 250px; */
+  /* width: 200px;
+   display: flex
+;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+
+ border: 2px solid #d9d9d9;
+  border-radius: 6px;
+
+} */
+/* .pricing-area{ */
+  /* display: flex; */
+  /* atur arah items apakah 
+  horizontal/vertikal */
+  /* flex-direction: row; (row-reverse, columen)*/
+  /* flex-direction: row; */
+  /* atur jarak antar items */
+  /* gap: 10px; */
+  /* atur arah posisi horizontal */
+  /* default flex-start(center, flex-end,
+  space-between) */
+  /* justify-content: center; */
+  /* posisi vertikal nya */
+  /* default :flex-start */
+  
+
+
+
+/* .profile-card {
+  background: #f9f9f9;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  height: 250px;
+  width: 200px;
+  border: 2px dashed #eee;
+  border-radius: 6px;
+}
+/* wadah flaxbox wajib dislay nya flex */
+/* .pricing-area{
+  display: flex;
+  /* atur arah items apakah 
+  horizontal/vertikal */
+  /* flex-direction: row; (row-reverse, columen)*/
+  /* flex-direction: row; */
+  /* atur jarak antar items */
+  /* gap: 10px; */
+  /* atur arah posisi horizontal */
+  /* default flex-start(center, flex-end,
+  space-between) */
+  /* justify-content: center; */
+  /* posisi vertikal nya */
+  /* default :flex-start */ 
+  
+/* }
+.pro-blu{
+  border: 2px solid blue;
+  width: 250px;
+  height: 250px;
+}
+.alert{
+  display: flex;
+  background-color: cornflowerblue;
+  border: 2px solid blue;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.alert button{
+  font-size: 10px;
+  background: indigo;
+  padding: 8px;
+
+}
