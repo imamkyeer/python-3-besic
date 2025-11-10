@@ -5,30 +5,105 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <!-- load bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
   <body>
-    <!--  .conyainer ( titik )untuk langsung buat div (div claas otomatis) -->
+    <!-- .container = jadi div class otomatis -->
+    <!-- color modes: primary / info / success / warning / danger -->
     <div class="container bg-light">
-    <h1 class="text-success ">Hello, world!</h1>
-    <!-- load boostrap js -->
-     <p class="text-danger">P inpo kebakaran bang</p></div>
-     <!--  buat full width/layar penuh -->
-         <div class="container-fluid bg-danger">
-    <h1>Hello, world!</h1>
-    <!-- load boostrap js -->
-     <div class="d-grid gap-2">
-      <!-- xl/lg/sm: untuk ukuranbesar kecil -->
-  <button class="btn btn-primary" type="button">
-    simpan perubahan
-  </button>
-  <button class="btn btn-primary" type="reset">
-    Reset data</button>
-  <button class="btn btn-outline-info" type="button">
-  normal</button>
+        <h1 class="text-success">Hello, world!</h1>
+        <div class="alert alert-danger">            
+            P ingpo <span class="text-danger">kebakaran</span> bang!
+        </div>        
 
+        <!-- xl/lg/sm : atur ukuran besar kecil -->
+        <button type="button" class="btn btn-primary btn-lg">
+            Simpan Perubahan
+        </button>
+        <button type="button" class="btn btn-outline-info">
+            Normal Button
+        </button>
+        <button type="reset" class="btn btn-danger btn-sm">
+            Reset Data
+        </button>
+    
+    <!-- full width 100% = layar penuh -->
+    <!-- <div class="container-fluid bg-warning">
+        <h1>Hello, world!</h1>
+        <p>Bahaya bang, kebakaran bang!</p>
+    </div> -->
+    <!-- load bootstrap js -->
+      <hr>
+    <!-- galeri rensponsive 4 kolom -->
+      <!-- .row wajib ada :untuk membuat baris baru -->
+      <!-- wajib ada sebelum membuat barus baru -->
+        <div class="row">
+        <div class="col-4 bg-primary">AREA KIRI</div>
+        <div class="col-4 bg-success">AREA TENGAH</div>
+        <div class="col-4 bg-primary">AREA KANAN</div>
+        <div class="col-8 bg-primary">AREA KIRI BAWAH</div>
+        <div class="col-2 bg-primary">AREA KIRI BAWAH</div>
+        <div class="col-2 bg-primary">AREA KIRI BAWAH</div>
+        
+        
+      </div>
+      <HR>
+        <div class="row">
+<!-- .row>.col-3*4>img : 4 kolom denagn img -->
+ <!-- col-md-3: 4kolom ukuran layar sedang -->
+ <!-- col-sm-6: 2 kolom ukuran layar kecil-->
+ <!-- col-12: 1 kolom ukuran layar sanagt kecil -->
+
+
+  <div class="row">
+    <div class="col-md-3 col-sm-6 col-12"><img class="img-thumbnail" src="https://images.unsplash.com/photo-1633020373642-51481ca3846d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=847" alt=""></div>
+    <div class="col-md-3 col-sm-6 col-12"><img class="img-thumbnail" src="https://images.unsplash.com/photo-1653798402576-a82513fa52c1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=880" alt=""></div>
+    <div class="col-md-6 col-sm-12 col-12"><img  class="img-thumbnail" src="https://images.unsplash.com/photo-1707352757059-511909302140?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=917" alt=""></div>
+    <div class="col-md-6 col-sm-12 col-12"><img class="img-thumbnail" src="https://images.unsplash.com/photo-1592551575420-6fe3b273ccbd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=880" alt=""></div>
+    <div class="col-md-3 col-sm-12 col-6"><img src="https://images.unsplash.com/photo-1679126625085-d999863b7f3f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687" alt=""></div>
+  <!-- end row -->
+  </div>
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>John</td>
+      <td>Doe</td>
+      <td>@social</td>
+    </tr>
+    </div>
+  </tbody>
+</table>
+<div class="form-floating mb-3">
+  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput">Email address</label>
 </div>
-     <div class="alert alert-danger">P inpo <span class="text-danger">kebakaran</span> bang</div></div>
+<div class="form-floating">
+  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+  <label for="floatingPassword">Password</label>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
 </html>
+

@@ -1,0 +1,305 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f9fc;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.judul {
+  width: 95%;
+  display: block;
+  text-align: center;
+  /* border-bottom: 4px solid rgb(235, 250, 250); */
+  margin: auto;
+  
+}
+
+.title {
+  color: blue;
+}
+
+nav {
+  margin: 20px 0;
+}
+
+.Karya{
+  border-left: 4px solid gold;
+  padding-left: 6px;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 8px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  background: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+  display: flex;
+}
+
+nav a.active {
+  background: #1e6ee6;
+  color: #fff;
+}
+
+.main-nav ul{
+  /* reset bunderan nya */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.main-nav ul li a{
+  color: white;
+  background-color: rgb(100, 100, 255);
+  text-decoration: none;
+  /* 6px => atas bawah */
+  /* 20px => kiri kanan */
+  padding: 6px 20px;
+  border-radius: 20px;
+  display: block;
+}
+
+/* ukuran 1024px => desktop++ */
+@media screen and (min-width: 1024px) {
+  .site-header{
+    background: indigo;
+    color: white;
+  }
+  .site-header P{
+    color: white;
+  }
+  /* masukkan tag / target selector */
+}
+
+/* ukuran 768-1023px => tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .site-header{
+    background: tomato;
+    color: white;
+  }
+  .site-header P{
+    color: white;
+  }
+  .main-nav ul li {
+    flex-grow: 1; /* boleh melebar */
+    flex-shrink: 1;/* boleh menyusut */
+    flex-basis: calc(33.33% - .5rem) ;
+  }
+  /* masukkan tag / target selector */
+}
+
+/* ukuran max 767px => smartphone */
+@media screen and (max-width: 767px) {
+  .site-header h1{
+    
+    font-size: 24px;
+  }
+  .site-header P{
+    font-size: 14px;
+  }
+  .main-nav ul li {
+    flex-grow: 1; /* boleh melebar */
+    flex-shrink: 1;/* boleh menyusut */
+    flex-basis: 100%;
+    /* biar full ke bawah */
+  }
+  
+  }
+
+ 
+  /* masukkan tag / target selector */
+
+
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+.yutub {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.yutub iframe {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: 90%;
+  height: 90%;
+  border-radius: 10%;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  color: #04347d;
+}
+
+h2 {
+  border-left: 5px solid rgb(177, 192, 21);
+  padding-left: 12px;
+}
+
+.foto {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 10px 0;
+  object-fit: cover;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #aaa;
+  text-align: center;
+  padding: 8px;
+}
+
+/* .galeri {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.galeri-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+} */
+
+.galeri {
+  display: flex;
+  gap: 20px; /* jarak antar gambar */
+  overflow-x: auto; /* biar bisa scroll ke samping */
+  white-space: nowrap; /* cegah turun ke bawah */
+  padding: 10px;
+}
+
+.galeri-container img {
+  width: 200px; /* atur ukuran sesuai kebutuhan */
+  height: 200px;
+  border-radius: 50%; /* biar bulat */
+  flex-shrink: 0; /* biar gak mengecil */
+  object-fit: cover; /* isi penuh */
+}
+.feedback {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+.feedback input {
+  padding-top: 12px;
+  margin-top: 8px;
+}
+
+.rekom {
+  display: flex;
+  flex-direction: column;
+}
+.tombol {
+  display: flex;
+  justify-content: end;
+}
+
+.tombol .atur-ulang {
+  margin-right: 8px;
+  padding: 8px 12px;
+  color: white;
+  background-color: gray;
+  border: none;
+}
+
+.tombol .kirim-feedback {
+  margin-right: 8px;
+  padding: 8px 12px;
+  color: white;
+  background-color: blue;
+  border: none;
+}
+.card{
+ font-size: 14px; 
+}
+/* ukuran 1024px => desktop++ */
+@media screen and (min-width: 1024px) {
+  /* masukkan tag / target selector */
+  .site-header{
+    background: pink;
+    color: white;
+  }
+
+  .site-header p{
+    color: white;
+  }
+
+}
+
+/* ukuran 768-1023px => tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* masukkan tag / target selector */
+  site-header{
+    background: tomato;
+    color: white;
+  }
+
+  .site-header p{
+    color: white;
+  }
+  .main-naf ul li{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(33.333%);
+  }
+
+}
+
+/* ukuran max 767px => smartphone */
+@media screen and (max-width: 767px) {
+  /* masukkan tag / target selector */
+
+site-header h1{
+   font-size: 24px;
+   color: pink
+  }
+
+  .site-header p{
+   font-size: 14px;
+  }
+
+  nav {
+    font-size: x-small;
+    margin: 12px;
+    flex-wrap: wrap;
+  }
+  
+}
